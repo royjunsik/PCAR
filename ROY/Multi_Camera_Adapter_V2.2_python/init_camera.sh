@@ -7,8 +7,8 @@ if [ -c "/dev/video0" ]; then
 echo "video0 detected!"
 echo "---Start testing each camera"
 echo "if all of them are normal, after it finished,you will see four image in the current path."
-sleep 2
-sudo python AdapterTestDemo.py 
+
+python AdapterTestDemo.py 
 else
 echo "Can't find video0 device, please check the hardware connection! "
 fi
